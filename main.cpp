@@ -19,9 +19,18 @@ int main()
     numbers.push("eigth");
     numbers.push("nine");
 
-   cout << "The size of queue is: " << numbers.size() << endl;
-   cout << "The number in front of the queue is: " << numbers.front() << endl;
-   cout << "The number behind the queue is: " << numbers.back() << endl;
+    while(!numbers.empty())
+    {
+        cout << "The size of queue is: " <<
+                numbers.size() << endl <<
+                "The number in front of the queue is: " <<
+                numbers.front() << endl <<
+                "The number behind the queue is: " <<
+                numbers.back() << endl;
+
+        numbers.pop();
+
+    }
 
     return 0;
 }
